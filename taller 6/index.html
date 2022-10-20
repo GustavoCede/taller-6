@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taller 6</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src = "from.js"></script>
+  </head>
+  <body>
+    <div class="content-taller6">
+      <div class="content__taller6-ej" id="taller6-block">
+        <h1>Taller 6</h1>
+        <p>•Cree un array llamado meses, este array deberá almacenar el nombre de los doce meses del año. Muestre por pantalla el nombre de cada uno de ellos utilizando un bucle for. <br>
+          •Cree un script que defina un objeto llamado Producto_alimenticio, este objeto debe presentar las propiedades código, nombre y precio, además del método imprimeDatos, el cual escribe por pantalla los valores de sus propiedades. Posteriormente, cree tres instancias de este objeto y guárdelas en un array. <br>
+          Con la ayuda del bucle for, utilice el método imprimeDatos para mostrar por pantalla los valores de los tres objetos instanciados.</p>
+      </div>
+      <div class="container-sm" id="taller6-block">
+        <div>
+          <h2 >Meses del año</h2>
+          <button class="btn  btn-primary" onclick="mostrararray()"  >Mostrar</button>        
+          <p  id="imprimir"></p>
+        </div>
+      </div>
+      <div class="form" id="taller6-block">
+        <form action="" method="GET" >
+          <h2>Ingresa los datos del producto</h2>
+          <label for="Código">
+          <input id="codigo" class="form-control" name="codigo" type="number" placeholder="Código"></label> <br>
+          <label for="nombre"> 
+          <input id="nombre" class="form-control" name="nombre" type="text" placeholder="Nombre"></label> <br>
+          <label for="precio">
+          <input id="precio" class="form-control" name="precio" type="number" placeholder="Precio"></label><br> <br>
+          <button class="btn btn-success"  type="reset" onclick=" productoNuevo()">Crear</button>
+          <button  type="button" class="btn btn-success" onclick="mostrar()" >mostrar </button>
+          <button  type="submit" class="btn  btn-primary" onclick="Limpiar()" >Limpiar</button>
+          <br><br>
+          <p class="card-text" id="objetos" ></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
